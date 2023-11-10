@@ -157,7 +157,7 @@ impl From<Command> for u16 {
 
 enum OperationType {
     Write = 0,
-    Read  = 1,
+    Read = 1,
 }
 
 #[derive(Eq, PartialEq, Copy, Clone)]
@@ -169,17 +169,17 @@ enum Ack {
 #[cfg(any(esp32c2, esp32c3, esp32c6, esp32h2, esp32s3))]
 enum Opcode {
     RStart = 6,
-    Write  = 1,
-    Read   = 3,
-    Stop   = 2,
+    Write = 1,
+    Read = 3,
+    Stop = 2,
 }
 
 #[cfg(any(esp32, esp32s2))]
 enum Opcode {
     RStart = 0,
-    Write  = 1,
-    Read   = 2,
-    Stop   = 3,
+    Write = 1,
+    Read = 2,
+    Stop = 3,
 }
 
 /// I2C peripheral container (I2C)
